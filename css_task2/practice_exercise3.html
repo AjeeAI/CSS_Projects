@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            display:flex;
+            flex-direction: column;
+
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+        }
+        header p{
+            font-size: 30px;
+            color: rgb(228, 187, 110);
+        }
+        menu{
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        menu button{
+            background-color: rgb(6, 118, 161);
+            color: rgb(228, 187, 110);
+            height: 30px;
+            width: 130px;
+            border-radius: 5px;
+        }
+
+        .main_container{
+            display: flex;
+
+        }
+
+        .sidebar{
+            margin: auto;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(240, 243, 238);
+           color: rgb(228, 187, 110);
+            width: 30vw;
+            height: 50vh;
+            border-radius: 20px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .sidebar:hover{
+             background-color: rgb(255, 255, 255);
+        }
+
+
+         .content{
+             margin: auto;
+             margin-right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            gap: 10px;
+            background-color: rgb(240, 243, 238);
+            color: rgb(228, 187, 110);
+            width: 30vw;
+            height: 50vh;
+            border-radius: 20px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .content:hover{
+            background-color: rgb(255, 255, 255);
+        }
+
+        .cards{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            height: 300px;
+            width: 95vw;
+            border-radius: 20px;
+            background-color: white;
+            
+            
+        }
+
+        .card{
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 20vw;
+            border-radius: 20px;
+            background-color: rgb(240, 243, 238);
+            color: rgb(228, 187, 110);
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .card:hover{
+             background-color: rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            Ajee
+        </p>
+
+        <menu>
+            <button>
+                Home
+            </button>
+
+            <button>
+                About
+            </button>
+
+            <button>
+                Contact me
+            </button>
+        </menu>
+    </header>
+
+    <div class = "main_container">
+        <div class = "sidebar">
+            sidebar
+        </div>
+
+        <div class = "content">
+            <p>
+                This is the main section
+            </p>
+        </div>
+    </div>
+
+    <div class = "cards">
+        <div class = "card">
+            <p>
+                First card
+            </p>
+        </div>
+
+        <div class = "card">
+            <p>
+                Second card
+            </p>
+        </div>
+
+        <div class = "card">
+            <p>
+                Third card
+            </p>
+        </div>
+
+        <div class = "card">
+            <p>
+                Fourth card
+            </p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+Ajee — Flutter App Developer
+
+Turning ideas into fast, beautiful cross-platform apps.
+
+I’m a Flutter developer focused on clean architecture, smooth UX, and performance. I enjoy solving tough bugs and making apps run better.
+
+Core Skills:
+Flutter & Dart, REST API + MySQL / Firebase, State management & clean architecture, Debugging & performance tuning
+
+Values:
+Simplicity • Speed • Reliability
+
+Currently building hybrid solutions connecting Flutter front-ends with PHP/MySQL back-ends, plus media-rich features like GPS, audio, and photo capture.
+
+Have a product idea or bug to squash? Let’s make it happen — reach out!
+
+Email • LinkedIn • GitHub
+
+"Ship often. Learn fast. Iterate well."
