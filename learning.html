@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    %%html
+<style>
+    .advanced-flex-demo {
+        background-color: #f8f9fa;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        color:black;
+    }
+    
+    /* Holy Grail Layout with Flexbox */
+    .holy-grail {
+        display: flex;
+        flex-direction: column;
+        min-height: 300px;
+        border: 2px solid #dee2e6;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    
+    .hg-header, .hg-footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+    
+    .hg-main {
+        display: flex;
+        flex: 1;
+    }
+    
+    .hg-sidebar {
+        background-color: #34495e;
+        color: white;
+        padding: 20px;
+        flex: 0 0 150px;
+    }
+    
+    .hg-content {
+        background-color: white;
+        padding: 20px;
+        flex: 1;
+    }
+    
+    .hg-aside {
+        background-color: #7f8c8d;
+        color: white;
+        padding: 20px;
+        flex: 0 0 120px;
+    }
+    
+    /* Flexible Cards with Different Behaviors */
+    .flex-cards {
+        display: flex;
+        gap: 15px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+    
+    .flex-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        border: 1px solid #e9ecef;
+    }
+    
+    .card-grow { flex: 1; }                    /* Grows to fill space */
+    .card-fixed { flex: 0 0 200px; }           /* Fixed width */
+    .card-min { flex: 1 1 150px; }             /* Grows but minimum 150px */
+    .card-no-shrink { flex: 1 0 auto; }        /* Grows, never shrinks */
+    
+    /* Order demonstration */
+    .order-demo {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    
+    .order-item {
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        border-radius: 4px;
+        flex: 1;
+    }
+    
+    .order-1 { order: 3; background-color: #dc3545; }
+    .order-2 { order: 1; background-color: #28a745; }
+    .order-3 { order: 2; background-color: #ffc107; color: black; }
+    
+    /* Align-self demonstration */
+    .align-demo {
+        display: flex;
+        align-items: flex-start;
+        height: 120px;
+        gap: 10px;
+        background-color: #e9ecef;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    
+    .align-item {
+        background-color: #6c757d;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        border-radius: 4px;
+        flex: 1;
+    }
+    
+    .align-center { align-self: center; background-color: #17a2b8; }
+    .align-end { align-self: flex-end; background-color: #6f42c1; }
+    .align-stretch { align-self: stretch; background-color: #fd7e14; }
+</style>
+
+<h3>Advanced Flexbox Patterns</h3>
+
+<div class="advanced-flex-demo">
+    <h4>Holy Grail Layout with Flexbox</h4>
+    <div class="holy-grail">
+        <header class="hg-header">Header</header>
+        <div class="hg-main">
+            <aside class="hg-sidebar">Left Sidebar</aside>
+            <main class="hg-content">
+                <h4>Main Content</h4>
+                <p>This is the classic "Holy Grail" layout achieved with Flexbox. The content area grows while sidebars stay fixed width.</p>
+            </main>
+            <aside class="hg-aside">Right Sidebar</aside>
+        </div>
+        <footer class="hg-footer">Footer</footer>
+    </div>
+</div>
+
+<div class="advanced-flex-demo">
+    <h4>Flex Behavior Comparison</h4>
+    <div class="flex-cards">
+        <div class="flex-card card-grow">
+            <strong>flex: 1</strong><br>
+            Grows to fill available space
+        </div>
+        <div class="flex-card card-fixed">
+            <strong>flex: 0 0 200px</strong><br>
+            Fixed 200px width
+        </div>
+        <div class="flex-card card-min">
+            <strong>flex: 1 1 150px</strong><br>
+            Grows, min 150px
+        </div>
+    </div>
+</div>
+
+<div class="advanced-flex-demo">
+    <h4>Visual Order Control</h4>
+    <div class="order-demo">
+        <div class="order-item order-1">HTML Order: 1<br>Visual Order: 3</div>
+        <div class="order-item order-2">HTML Order: 2<br>Visual Order: 1</div>
+        <div class="order-item order-3">HTML Order: 3<br>Visual Order: 2</div>
+    </div>
+    <p><small>Items are reordered visually using the order property</small></p>
+</div>
+
+<div class="advanced-flex-demo">
+    <h4>Individual Item Alignment (align-self)</h4>
+    <div class="align-demo">
+        <div class="align-item">flex-start (default)</div>
+        <div class="align-item align-center">center</div>
+        <div class="align-item align-end">flex-end</div>
+        <div class="align-item align-stretch">stretch</div>
+    </div>
+</div>
+</body>
+</html>
