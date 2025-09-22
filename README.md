@@ -44,5 +44,7 @@
 
 ## Preview of the ninth task
 
-![Preview of ninth task](https://github.com/user-attachments/assets/e75a11ec-630b-47a2-9575-fcecd608421a)
+![Image Preview of ninth task](https://github.com/user-attachments/assets/94fac0db-fb22-4450-a66d-8329b5fa6344)
+
+![Watch the video Preview of ninth task](https://github.com/user-attachments/assets/e75a11ec-630b-47a2-9575-fcecd608421a)
 
